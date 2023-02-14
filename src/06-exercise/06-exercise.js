@@ -3,7 +3,7 @@
  *
  * Finish the code of the `exercise06` function so that it:
  *
- * 1. Destructures the first 2 keys of the `user` object
+ * 1. Destructure the first 2 keys of the `user` object
  *    and gathers all the other keys in an object
  *    using destructuring.
  *
@@ -26,6 +26,10 @@ function exercise06() {
         company: "Assembler School",
         averageGrade: 6.6,
     };
+
+    const {firstName, lastName, ...rest} = user;
+
+    return rest;
 }
 
 // Don’t change the code bellow this line
